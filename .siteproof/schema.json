@@ -1,0 +1,140 @@
+{
+  "$schema": "https://siteproof.dev/schema.json",
+  "version": 1,
+  "collections": [
+    {
+      "slug": "global",
+      "labels": {
+        "singular": "Global",
+        "plural": "Global"
+      },
+      "admin": {
+        "useAsTitle": "og_title"
+      },
+      "fields": [
+        {
+          "name": "og_title",
+          "type": "text",
+          "label": "Open Graph Title"
+        },
+        {
+          "name": "og_description",
+          "type": "text",
+          "label": "Open Graph Description"
+        },
+        {
+          "name": "twitter_title",
+          "type": "text",
+          "label": "Twitter Title"
+        },
+        {
+          "name": "twitter_description",
+          "type": "text",
+          "label": "Twitter Description"
+        }
+      ]
+    },
+    {
+      "slug": "home",
+      "labels": {
+        "singular": "Home",
+        "plural": "Home"
+      },
+      "admin": {
+        "useAsTitle": "brand_name"
+      },
+      "fields": [
+        {
+          "name": "brand_name",
+          "type": "text",
+          "label": "Brand Name"
+        },
+        {
+          "name": "status_badge",
+          "type": "text",
+          "label": "Status Badge"
+        },
+        {
+          "name": "main_headline",
+          "type": "text",
+          "label": "Hero Main Headline"
+        },
+        {
+          "name": "highlight_text",
+          "type": "text",
+          "label": "Hero Highlight Text"
+        },
+        {
+          "name": "subtitle",
+          "type": "text",
+          "label": "Hero Subtitle"
+        },
+        {
+          "name": "success_message",
+          "type": "text",
+          "label": "Success Message"
+        },
+        {
+          "name": "cta_button",
+          "type": "text",
+          "label": "CTA Button Text"
+        },
+        {
+          "name": "signup_disclaimer",
+          "type": "text",
+          "label": "Signup Disclaimer"
+        },
+        {
+          "name": "section_title",
+          "type": "text",
+          "label": "Features Section Title"
+        },
+        {
+          "name": "section_subtitle",
+          "type": "text",
+          "label": "Features Section Subtitle"
+        },
+        {
+          "name": "feature1_title",
+          "type": "text",
+          "label": "Feature 1 Title"
+        },
+        {
+          "name": "feature1_description",
+          "type": "text",
+          "label": "Feature 1 Description"
+        },
+        {
+          "name": "feature2_title",
+          "type": "text",
+          "label": "Feature 2 Title"
+        },
+        {
+          "name": "feature2_description",
+          "type": "text",
+          "label": "Feature 2 Description"
+        },
+        {
+          "name": "feature3_title",
+          "type": "text",
+          "label": "Feature 3 Title"
+        },
+        {
+          "name": "feature3_description",
+          "type": "text",
+          "label": "Feature 3 Description"
+        },
+        {
+          "name": "brand_name",
+          "type": "text",
+          "label": "Footer Brand Name"
+        },
+        {
+          "name": "copyright",
+          "type": "text",
+          "label": "Copyright Text"
+        }
+      ]
+    }
+  ]
+}
