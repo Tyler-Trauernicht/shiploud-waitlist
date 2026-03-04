@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { Check, Loader2, ArrowRight, Sparkles, Calendar, FolderOpen } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
 import { Logo } from '@/components/logo';
-import { Editable } from '@siteproof/react';
 
 export default function WaitlistPage() {
   const [email, setEmail] = useState('');
@@ -56,7 +55,7 @@ export default function WaitlistPage() {
             </div>
             <span className="inline-flex items-center gap-2 rounded-full bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-600">
               <span className="h-1.5 w-1.5 rounded-full bg-indigo-500" />
-              <Editable field="home.header.status_badge" type="text" label="Status Badge Text"><span>Coming Soon</span></Editable>
+              Coming Soon
             </span>
           </div>
         </div>
@@ -68,15 +67,15 @@ export default function WaitlistPage() {
           <div className="mx-auto max-w-2xl text-center">
             {/* Headline */}
             <h1 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-              <Editable field="home.hero.headline" type="text" label="Hero Headline"><span>Your code has a story.</span></Editable>
+              Your code has a story.
               <br />
-              <Editable field="home.hero.headline_highlight" type="text" label="Hero Headline Highlight"><span className="text-indigo-500">Tell it.</span></Editable>
+              <span className="text-indigo-500">Tell it.</span>
             </h1>
 
             {/* Subheadline */}
-            <Editable field="home.hero.subtitle" type="text" label="Hero Subtitle"><p className="mt-6 text-lg text-gray-600 leading-8">
+            <p className="mt-6 text-lg text-gray-600 leading-8">
               ShipLoud turns your GitHub repos into ready-to-post content for X and LinkedIn. Stop staring at a blank tweet.
-            </p></Editable>
+            </p>
 
             {/* Email Form */}
             <div className="mt-10">
@@ -84,7 +83,7 @@ export default function WaitlistPage() {
                 <div className="mx-auto max-w-md rounded-lg border border-emerald-200 bg-emerald-50 px-6 py-4">
                   <div className="flex items-center justify-center gap-3 text-emerald-700">
                     <Check className="h-5 w-5" />
-                    <Editable field="home.hero.success_message" type="text" label="Success Message"><span className="font-medium">You&apos;re on the list! We&apos;ll be in touch.</span></Editable>
+                    <span className="font-medium">You&apos;re on the list! We&apos;ll be in touch.</span>
                   </div>
                 </div>
               ) : (
@@ -110,7 +109,7 @@ export default function WaitlistPage() {
                         <Loader2 className="h-4 w-4 animate-spin" />
                       ) : (
                         <>
-                          <Editable field="home.hero.cta_button" type="text" label="CTA Button Text"><span>Join Waitlist</span></Editable>
+                          <span>Join Waitlist</span>
                           <ArrowRight className="h-4 w-4" />
                         </>
                       )}
@@ -119,9 +118,9 @@ export default function WaitlistPage() {
                   {status === 'error' && errorMessage && (
                     <p className="mt-3 text-sm text-red-500">{errorMessage}</p>
                   )}
-                  <Editable field="home.hero.signup_disclaimer" type="text" label="Signup Disclaimer"><p className="mt-4 text-sm text-gray-500">
+                  <p className="mt-4 text-sm text-gray-500">
                     Join 100+ developers. No spam, ever.
-                  </p></Editable>
+                  </p>
                 </form>
               )}
             </div>
@@ -133,12 +132,12 @@ export default function WaitlistPage() {
       <section className="border-t border-gray-200 bg-gray-50 py-20 sm:py-24">
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <div className="text-center">
-            <Editable field="home.features.section_title" type="text" label="Features Section Title"><h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">
+            <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">
               What you&apos;ll get
-            </h2></Editable>
-            <Editable field="home.features.section_subtitle" type="text" label="Features Section Subtitle"><p className="mt-4 text-base text-gray-600">
+            </h2>
+            <p className="mt-4 text-base text-gray-600">
               Everything you need to market your projects without becoming a marketer
-            </p></Editable>
+            </p>
           </div>
 
           <div className="mt-16 grid gap-8 sm:grid-cols-3">
@@ -147,10 +146,10 @@ export default function WaitlistPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-50">
                 <Sparkles className="h-6 w-6 text-indigo-500" />
               </div>
-              <Editable field="home.features.feature1_title" type="text" label="Feature 1 Title"><h3 className="mt-4 text-base font-semibold text-gray-900">AI-Powered Content</h3></Editable>
-              <Editable field="home.features.feature1_description" type="text" label="Feature 1 Description"><p className="mt-2 text-sm text-gray-600 leading-6">
+              <h3 className="mt-4 text-base font-semibold text-gray-900">AI-Powered Content</h3>
+              <p className="mt-2 text-sm text-gray-600 leading-6">
                 Generate tweets, threads, and LinkedIn posts directly from your README and code.
-              </p></Editable>
+              </p>
             </div>
 
             {/* Feature 2 */}
@@ -158,10 +157,10 @@ export default function WaitlistPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-50">
                 <Calendar className="h-6 w-6 text-indigo-500" />
               </div>
-              <Editable field="home.features.feature2_title" type="text" label="Feature 2 Title"><h3 className="mt-4 text-base font-semibold text-gray-900">Smart Scheduling</h3></Editable>
-              <Editable field="home.features.feature2_description" type="text" label="Feature 2 Description"><p className="mt-2 text-sm text-gray-600 leading-6">
+              <h3 className="mt-4 text-base font-semibold text-gray-900">Smart Scheduling</h3>
+              <p className="mt-2 text-sm text-gray-600 leading-6">
                 Plan your content calendar with AI-suggested optimal posting times.
-              </p></Editable>
+              </p>
             </div>
 
             {/* Feature 3 */}
@@ -169,10 +168,10 @@ export default function WaitlistPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-50">
                 <FolderOpen className="h-6 w-6 text-indigo-500" />
               </div>
-              <Editable field="home.features.feature3_title" type="text" label="Feature 3 Title"><h3 className="mt-4 text-base font-semibold text-gray-900">Content Library</h3></Editable>
-              <Editable field="home.features.feature3_description" type="text" label="Feature 3 Description"><p className="mt-2 text-sm text-gray-600 leading-6">
+              <h3 className="mt-4 text-base font-semibold text-gray-900">Content Library</h3>
+              <p className="mt-2 text-sm text-gray-600 leading-6">
                 All your generated content in one place. Copy, edit, or schedule anytime.
-              </p></Editable>
+              </p>
             </div>
           </div>
         </div>
@@ -184,11 +183,11 @@ export default function WaitlistPage() {
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <div className="flex items-center gap-2">
               <Logo size={24} />
-              <Editable field="home.footer.brand_name" type="text" label="Footer Brand Name"><span className="font-medium text-gray-900">ShipLoud</span></Editable>
+              <span className="font-medium text-gray-900">ShipLoud</span>
             </div>
-            <Editable field="home.footer.copyright" type="text" label="Copyright Text"><p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-500">
               © 2025 ShipLoud. Built for developers who ship.
-            </p></Editable>
+            </p>
           </div>
         </div>
       </footer>
