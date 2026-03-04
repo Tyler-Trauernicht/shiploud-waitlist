@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from "react"
+import { Editable } from '@siteproof/react'
 
 interface LogoProps {
   size?: number
@@ -50,8 +51,8 @@ export function LogoWithWordmark({ size = 32, className }: LogoProps) {
     <div className={`flex items-center gap-2 ${className || ''}`}>
       <Logo size={size} />
       <div className="flex items-baseline">
-        <span className="font-semibold text-gray-900">Ship</span>
-        <span className="font-semibold text-indigo-500">Loud</span>
+        <Editable field="logo.wordmark.ship_text" type="text" label="Brand Name First Part"><span className="font-semibold text-gray-900">Ship</span></Editable>
+        <Editable field="logo.wordmark.loud_text" type="text" label="Brand Name Second Part"><span className="font-semibold text-indigo-500">Loud</span></Editable>
       </div>
     </div>
   )
