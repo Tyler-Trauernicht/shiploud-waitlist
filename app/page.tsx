@@ -73,11 +73,11 @@ export default function WaitlistPage() {
             {/* Headline */}
             <h1 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
               <Editable field="home.hero.main_headline" type="text" label="Hero Main Headline">
-                <span>Your project has a story.</span>
+                <span>Your code has a story.</span>
               </Editable>
               <br />
               <Editable field="home.hero.highlight_text" type="text" label="Hero Highlight Text">
-                <span className="text-indigo-500">Share it.</span>
+                <span className="text-indigo-500">Ship it.</span>
               </Editable>
             </h1>
 
