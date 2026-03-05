@@ -1,6 +1,6 @@
 import { defineConfig } from '@siteproof/sdk';
 
 export default defineConfig({
-  projectId: '69a8933ca1b3e1ba3db62d15',
+  projectId: '69a901d3a70fd345502d389a',
   editorOrigin: process.env.NEXT_PUBLIC_SITEPROOF_URL ?? 'https://app.siteproof.dev',
 });
