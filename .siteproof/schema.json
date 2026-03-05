@@ -1,0 +1,153 @@
+{
+  "$schema": "https://siteproof.dev/schema.json",
+  "version": 1,
+  "collections": [
+    {
+      "slug": "global",
+      "labels": {
+        "singular": "Global",
+        "plural": "Global"
+      },
+      "admin": {
+        "useAsTitle": "title"
+      },
+      "fields": [
+        {
+          "name": "title",
+          "type": "text",
+          "label": "Site Title"
+        },
+        {
+          "name": "description",
+          "type": "text",
+          "label": "Site Description"
+        },
+        {
+          "name": "og_title",
+          "type": "text",
+          "label": "Open Graph Title"
+        },
+        {
+          "name": "og_description",
+          "type": "text",
+          "label": "Open Graph Description"
+        },
+        {
+          "name": "twitter_title",
+          "type": "text",
+          "label": "Twitter Title"
+        },
+        {
+          "name": "twitter_description",
+          "type": "text",
+          "label": "Twitter Description"
+        }
+      ]
+    },
+    {
+      "slug": "logo",
+      "labels": {
+        "singular": "Logo",
+        "plural": "Logo"
+      },
+      "admin": {
+        "useAsTitle": "ship_text"
+      },
+      "fields": [
+        {
+          "name": "ship_text",
+          "type": "text",
+          "label": "Brand Name First Part"
+        },
+        {
+          "name": "loud_text",
+          "type": "text",
+          "label": "Brand Name Second Part"
+        }
+      ]
+    },
+    {
+      "slug": "home",
+      "labels": {
+        "singular": "Home",
+        "plural": "Home"
+      },
+      "admin": {
+        "useAsTitle": "brand_name"
+      },
+      "fields": [
+        {
+          "name": "brand_name",
+          "type": "text",
+          "label": "Brand Name"
+        },
+        {
+          "name": "status_badge",
+          "type": "text",
+          "label": "Status Badge Text"
+        },
+        {
+          "name": "main_headline",
+          "type": "text",
+          "label": "Hero Main Headline"
+        },
+        {
+          "name": "highlight_text",
+          "type": "text",
+          "label": "Hero Highlight Text"
+        },
+        {
+          "name": "subtitle",
+          "type": "text",
+          "label": "Hero Subtitle"
+        },
+        {
+          "name": "success_message",
+          "type": "text",
+          "label": "Success Message"
+        },
+        {
+          "name": "cta_button",
+          "type": "text",
+          "label": "CTA Button Text"
+        },
+        {
+          "name": "disclaimer_text",
+          "type": "text",
+          "label": "Disclaimer Text"
+        },
+        {
+          "name": "section_title",
+          "type": "text",
+          "label": "Features Section Title"
+        },
+        {
+          "name": "section_subtitle",
+          "type": "text",
+          "label": "Features Section Subtitle"
+        },
+        {
+          "name": "items",
+          "type": "array",
+          "label": "Feature Items",
+          "fields": [
+            {
+              "name": "content",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "name": "brand_name",
+          "type": "text",
+          "label": "Footer Brand Name"
+        },
+        {
+          "name": "copyright_text",
+          "type": "text",
+          "label": "Copyright Text"
+        }
+      ]
+    }
+  ]
+}
