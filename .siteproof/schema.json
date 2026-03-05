@@ -3,10 +3,10 @@
   "version": 1,
   "collections": [
     {
-      "slug": "global",
+      "slug": "site",
       "labels": {
-        "singular": "Global",
-        "plural": "Global"
+        "singular": "Site",
+        "plural": "Site"
       },
       "admin": {
         "useAsTitle": "title"
