@@ -135,7 +135,7 @@ export default function WaitlistPage() {
                   )}
                   <Editable field="home.hero.disclaimer_text" type="text" label="Disclaimer Text">
                     <p className="mt-4 text-sm text-gray-500">
-                      Join 100+ developers. No spam, ever.
+                      Join 1+ developers. No spam, ever.
                     </p>
                   </Editable>
                 </form>
