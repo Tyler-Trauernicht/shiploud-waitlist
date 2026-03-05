@@ -77,7 +77,7 @@ export default function WaitlistPage() {
               </Editable>
               <br />
               <Editable field="home.hero.highlight_text" type="text" label="Hero Highlight Text">
-                <span className="text-indigo-500">Tell it.</span>
+                <span className="text-indigo-500">Share it.</span>
               </Editable>
             </h1>
 
